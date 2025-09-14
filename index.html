@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil Moderno</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">facebook</h1>
+            <form class="search-form" role="search">
+                <input class="search" type="search" placeholder="Buscar..." aria-label="Buscar">
+            </form>
+        </header>
+        <main class="main">
+            <aside class="sidebar">
+                <img src="assets/user.jpg" alt="Usuario" class="avatar">
+                <div class="username">Edwin Molina</div>
+                <nav class="sidebar-nav" aria-label="Menú lateral">
+                    <a href="#" class="sidebar-link active">Información</a>
+                    <a href="#" class="sidebar-link">Info</a>
+                    <a href="#" class="sidebar-link">X Amigos</a>
+                    <a href="#" class="sidebar-link">Ver todos</a>
+                </nav>
+                <div class="friends">
+                    <img src="assets/amiga1.jpg" alt="Amigo" class="friend">
+                    <img src="assets/amigo2.jpg" alt="Amigo" class="friend">
+                    <img src="assets/amigo3.jpg" alt="Amigo" class="friend">
+                </div>
+            </aside>
+            <section class="content">
+                <nav class="tabs" aria-label="Secciones">
+                    <button class="tab active" data-tab="muro" type="button">Muro</button>
+                    <button class="tab" data-tab="info" type="button">Info</button>
+                    <button class="tab" data-tab="fotos" type="button">Photos</button>
+                    <button class="tab" data-tab="cajas" type="button">Boxes</button>
+                </nav>
+                <!-- Muro -->
+                <section class="tab-content" id="muro">
+                    <form class="post-form">
+                        <input type="text" placeholder="Pon algo aquí..." class="post-input" aria-label="Publicar">
+                        <button type="submit" class="post-btn">Compartir</button>
+                    </form>
+                    <article class="post">
+                        <header class="post-header">
+                            <img src="assets/user.jpg" alt="Usuario" class="post-avatar">
+                            <span class="post-user">Nombre</span>
+                            <span class="post-date">20 abr</span>
+                        </header>
+                        <div class="post-body">
+                            ¡Hola! Este es mi muro.
+                        </div>
+                        <footer class="post-actions">
+                            <button class="like-btn" type="button">👍 Me gusta</button>
+                            <button class="comment-btn" type="button">💬 Comentar</button>
+                        </footer>
+                    </article>
+                </section>
+                <!-- Info -->
+                <section class="tab-content hidden" id="info">
+                    <h2>Info</h2>
+                    <div class="info-grid">
+                        <div>
+                            <ul>
+                                <li><strong>Email:</strong> edwinmolina154@gmail.com</li>
+                                <li><strong>Teléfono:</strong> 3168302733</li>
+                                <li><strong>Intereses:</strong> Programación, Música</li>
+                                <li><strong>Situación sentimental:</strong> Soltero</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="assets/user.jpg" alt="Usuario" class="avatar info-avatar">
+                        </div>
+                    </div>
+                </section>
+                <!-- Photos -->
+                <section class="tab-content hidden" id="fotos">
+                    <h2>Photos</h2>
+                    <div class="photos-grid">
+                        <img src="assets/foto1.jpg" alt="Foto" class="photo">
+                        <img src="assets/foto2.jpg" alt="Foto" class="photo">
+                        <img src="assets/foto3.jpg" alt="Foto" class="photo">
+                        <img src="assets/foto4.jpg" alt="Foto" class="photo">
+                        <img src="assets/foto5.jpg" alt="Foto" class="photo">
+                        <img src="assets/foto6.jpg" alt="Foto" class="photo">
+                        <img src="assets/foto7.jpg" alt="Foto" class="photo">
+                    </div>
+                </section>
+                <!-- Boxes -->
+                <section class="tab-content hidden" id="cajas">
+                    <h2>Boxes</h2>
+                    <div class="boxes-grid">
+                        <div class="box">Hola</div>
+                        <div class="box">Querido</div>
+                        <div class="box">Profesor</div>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+    <script src="scrips/app.js"></script>
+</body>
+</html>
